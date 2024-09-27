@@ -1,0 +1,287 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.semi-bold {
+    font-family: 'Lora', serif;
+    font-weight: 600;
+  }
+
+body {
+    font-family: 'Lora', serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    scroll-behavior: smooth; /* Smooth scrolling */
+
+   
+}
+
+/* Sticky Navbar */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #5A524C; /* Earth tone brown */
+}
+
+.navbar {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    color: #D7CCC8; /* Light earth tone */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 1rem;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #4E453F;
+    border-radius: 5px;
+}
+
+/* Section Styles */
+.section {
+    min-height: 100vh;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #B0A299; /* Earth tone border */
+}
+
+/* Different background colors for each section */
+#home {
+    background-image: url('Fujifilm-X100VI-Review-From-Professional-Photographer-A-Michelazzi-21.webp'); /* ใส่เส้นทางของรูปภาพที่ต้องการ */
+    background-size: cover; /* ปรับขนาดให้เต็มหน้าจอ */
+    background-position: center; /* ตำแหน่งของภาพให้อยู่ตรงกลาง */
+    background-repeat: no-repeat; /* ไม่ให้ภาพซ้ำ */
+    color: #fff; /* สีของข้อความบนพื้นหลัง */
+    padding: 100px 20px; /* ปรับระยะห่างให้เหมาะสม */
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+}
+
+.banner h1, .banner p {
+    background-color: rgba(0, 0, 0, 0.7); /* พื้นหลังสีดำโปร่งใส */
+    color: white; /* สีของตัวหนังสือเป็นสีขาวเพื่อให้ดูเด่น */
+    padding: 10px; /* เพิ่ม padding ให้กับข้อความ */
+    border-radius: 10px; /* ทำมุมโค้งมน */
+    display: inline-block; /* ทำให้พื้นหลังครอบคลุมเฉพาะส่วนของข้อความ */
+  }
+
+
+#portfolio {
+    background-color: #CBBBA2; /* Warm earth tone background for Portfolio */
+    color: #3E3A36;
+}
+
+#about {
+    background-color: #D1C4B2; /* Light brown background for About */
+    color: #3E3A36;
+}
+
+#contact {
+    background-color: #A1887F;
+    color: #fff;
+    padding: 50px 20px; /* เพิ่มระยะห่างให้พอเหมาะ */
+    display: flex;
+    justify-content: center; /* จัดให้อยู่ตรงกลาง */
+    align-items: center;
+    flex-direction: column; /* จัดเรียงให้อยู่ในแนวตั้ง */
+    text-align: center;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* จัดให้อยู่ตรงกลาง */
+    width: 100%;
+    max-width: 500px; /* จำกัดความกว้างของฟอร์ม */
+    padding: 20px;
+    background-color: #5A524C; /* สีพื้นหลังของฟอร์ม */
+    border-radius: 10px; /* มุมโค้งมน */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* เงาเล็กน้อย */
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%; /* ให้ฟอร์มกว้างเต็มพื้นที่ */
+    padding: 10px;
+    margin: 10px 0; /* ระยะห่างระหว่างฟิลด์ */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#contact form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#contact form button:hover {
+    background-color: #4E453F; /* เปลี่ยนสีเมื่อชี้เมาส์ */
+}
+
+
+h1, h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #3E3A36; /* Dark brown for headings */
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: #3E3A36; /* Dark brown for text */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #5A524C;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Gallery */
+.gallery-images {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    width: 100%;
+}
+
+.image-card {
+    flex: 1;
+    padding: 10px;
+}
+
+.image-card img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    z-index: 1;
+    border: 2px solid #fff; /* Border around images */
+}
+
+/* Popup Modal Style */
+.popup {
+    display: none; /* ซ่อนไว้จนกว่าจะคลิก */
+    position: fixed;
+    z-index: 999; /* ทำให้อยู่บนสุด */
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* สีพื้นหลังแบบโปร่ง */
+}
+
+.popup-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.popup-content {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+.close {
+    position: absolute;
+    top: 50px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    font-size: 1.2rem;
+}
+
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #5A524C;
+    color: #fff;
+}
+
+/* Smooth scrolling transition for sections */
+.section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Caption Styles */
+.caption {
+    margin-top: 20px;
+    font-style: italic;
+    color: #3E3A36; /* Dark brown for captions */
+    text-align: center;
+    max-width: 600px;
+    line-height: 1.5;
+}
